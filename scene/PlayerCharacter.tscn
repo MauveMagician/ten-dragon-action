@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 13, 13 )
 
-[node name="PlayerCharacter" type="KinematicBody2D"]
+[node name="PlayerCharacter" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -27,5 +27,14 @@ shape = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 2 )
+
+[node name="DashTiming" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="DashTiming" to="." method="_on_DashTiming_timeout"]
 
 
