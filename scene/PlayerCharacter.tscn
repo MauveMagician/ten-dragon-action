@@ -31,10 +31,19 @@ texture = ExtResource( 2 )
 [node name="DashTiming" type="Timer" parent="." index="2"]
 
 process_mode = 1
-wait_time = 0.5
-one_shot = false
+wait_time = 0.4
+one_shot = true
+autostart = false
+
+[node name="DashStopping" type="Timer" parent="." index="3"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = true
 autostart = false
 
 [connection signal="timeout" from="DashTiming" to="." method="_on_DashTiming_timeout"]
+
+[connection signal="timeout" from="DashStopping" to="." method="_on_DashStopping_timeout"]
 
 

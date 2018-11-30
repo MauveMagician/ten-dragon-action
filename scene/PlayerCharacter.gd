@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 const FLOOR_NORMAL = Vector2(0,-1)
 const GRAVITY_SPEED = -45
+const DRAG = 5
 export var verticalSpeed = -1050
 export var horizontalSpeed = 250
 var motion = Vector2()
@@ -17,6 +18,7 @@ func _ready():
 	
 func dash ():
 	motion.y = 0
+	motion.x = 0
 	dashing = true
 	gravity = false
 	$DashTiming.start()
@@ -25,12 +27,18 @@ func _on_DashTiming_timeout():
 	gravity = true
 	dashing = false
 	airdash = false
+	$DashStopping.start()
+
+func _on_DashStopping_timeout():
+	pass
 	
 func _physics_process(delta):
 	if gravity:
 		motion.y -= GRAVITY_SPEED
 	if dashing:
-		motion.x += facingLeft * 35
+		motion.x += facingLeft * 25
+	elif not $DashStopping.is_stopped():
+		motion.x += facingLeft * 12.5
 	else:
 		if Input.is_action_just_pressed("dash"):
 			if is_on_floor():

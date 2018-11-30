@@ -17,8 +17,6 @@ scale = Vector2( 16, 9.5 )
 
 position = Vector2( -4, -10.1053 )
 scale = Vector2( 0.0625, 0.105263 )
-verticalSpeed = -1050
-horizontalSpeed = 250
 
 [node name="Floor" type="Node" parent="." index="1"]
 
@@ -28,7 +26,6 @@ editor/display_folded = true
 
 editor/display_folded = true
 position = Vector2( 448, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -60,7 +57,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 768, 384 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -92,7 +88,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 832, 256 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -124,7 +119,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 768, 256 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -156,7 +150,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 768, 320 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -188,7 +181,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 768, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -220,7 +212,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 704, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -252,7 +243,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 640, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -284,7 +274,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 576, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -316,7 +305,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 512, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -348,7 +336,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 192, 384 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -380,7 +367,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 256, 384 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -412,7 +398,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 320, 384 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -444,7 +429,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 320, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -476,7 +460,6 @@ shape = SubResource( 1 )
 
 editor/display_folded = true
 position = Vector2( 384, 448 )
-scale = Vector2( 1, 1 )
 __meta__ = {
 "_edit_group_": true
 }
